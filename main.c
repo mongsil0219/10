@@ -4,20 +4,11 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
-	FILE*fp = NULL;
+	char code1 = 'A';
+	int code2 = 65;
 	
-	fp = fopen("sample.txt","w");
-	if(fp==NULL)
-	{
-		printf("파일을 못 열음\n");
-		return;
-	}
-	
-	fputc('a',fp);
-	fputc('b',fp);
-	fputc('c',fp);
-	
-	fclose(fp);
-	
+	printf("code1 = %c,(%d)\n",code1,code1);
+	printf("code2 = %c,(%d)\n", code2, code2);
+
 	return 0;
 }
